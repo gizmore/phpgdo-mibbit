@@ -14,6 +14,12 @@ use GDO\Mibbit\Module_Mibbit;
  */
 final class Chat extends MethodPage
 {
+
+	public function isTrivial(): bool
+	{
+		return false;
+	}
+
 	public function gdoParameters() : array
 	{
 		return [
