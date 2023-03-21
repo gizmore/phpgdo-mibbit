@@ -1,16 +1,16 @@
 <?php
 namespace GDO\Mibbit\Method;
 
-use GDO\UI\MethodPage;
 use GDO\Core\GDT_Checkbox;
 use GDO\Mibbit\Module_Mibbit;
+use GDO\UI\MethodPage;
 
 /**
  * Render Chat page.
- * 
- * @author gizmore
+ *
  * @version 7.0.1
  * @since 3.0.0
+ * @author gizmore
  */
 final class Chat extends MethodPage
 {
@@ -20,16 +20,16 @@ final class Chat extends MethodPage
 		return false;
 	}
 
-	public function gdoParameters() : array
+	public function gdoParameters(): array
 	{
 		return [
 			GDT_Checkbox::make('fullscreen')->initial(Module_Mibbit::instance()->getConfigVar('mibbit_fullscreen')),
 		];
 	}
-	
-	public function getMethodTitle() : string
+
+	public function getMethodTitle(): string
 	{
-	    return t('btn_mibbit');
+		return t('btn_mibbit');
 	}
-	
+
 }
